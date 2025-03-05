@@ -6,4 +6,4 @@ gem 'jekyll-gist', '~> 1.5'
 gem 'jekyll-paginate-v2', '~> 3.0'
 gem 'jekyll-seo-tag', '~> 2.8'
 gem 'jekyll-sitemap', '~> 1.4'
- 
+gem 'jekyll-sass-converter', '~> 2.0'
