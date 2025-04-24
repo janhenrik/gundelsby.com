@@ -25,13 +25,14 @@ jobs:
         env:
           JEKYLL_ENV: production
       
-      - name: Deploy via rsync to Hetzner
-        uses: burnett01/rsync-deployments@7.0.2
-        with:
-          switches: -avz --delete
-          path: _site/
-          remote_path: /var/www/gundelsby.com/
-          remote_host: ${{ secrets.HETZNER_HOST }}
-          remote_user: ${{ secrets.HETZNER_USER }}
-          remote_key: ${{ secrets.HETZNER_KEY }}
-          
+      - name: Upload to Bunny CDN Storage
+        run: |
+          find _site -type f | while read file; do
+            echo "Uploading: $file"
+            curl -s -T "$file" \
+              -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
+              "https://storage.bunnycdn.com/gundelsby-com-webpage/${file#_site/}" \
+              --fail || { echo "❌ Failed uploading $file" ; exit 1; }
+          done
+
+  
