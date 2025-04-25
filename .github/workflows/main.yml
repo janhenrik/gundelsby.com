@@ -1,4 +1,4 @@
-name: Build site and deploy to Hetzner
+name: Build site and deploy to Bunny.net
 
 on:
   push:
