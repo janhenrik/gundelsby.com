@@ -1,26 +1,37 @@
-# Homepage
+# gundelsby.com
 
-gundelsby.com
+This repository contains the source for Jan Henrik's personal website. The site is built with [Jekyll](https://jekyllrb.com/) using the [cvless](https://github.com/piazzai/cvless) theme.
 
-## Local Development
+## Local development with Docker
 
-This repo includes a docker-compose file that allows you to quickly setup a container running Jekyll. If you don't already have Docker and docker-compose installed, you can install them using the following guides:
+1. Ensure [Docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) are installed.
+2. Start the development container:
 
-**Install Guides**
-* [Docker](https://docs.docker.com/get-docker/)
-* [docker-compose](https://docs.docker.com/compose/install/)
-
-To start the container simply run:
-
-```
+```sh
 docker-compose up
 ```
 
-Alternatively you can run the container without docker-compose using this command on iOS/Linux:
+The site will be available at [http://localhost:4000](http://localhost:4000).
 
-```
+You can also run the container directly on Linux/macOS:
+
+```sh
 docker run -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
 ```
 
-# Credits
-Based on [cvless](https://github.com/piazzai/cvless)
+## Running without Docker
+
+If you prefer running Jekyll locally, install Ruby and Bundler, then:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+## Credits
+
+Based on [cvless](https://github.com/piazzai/cvless).
