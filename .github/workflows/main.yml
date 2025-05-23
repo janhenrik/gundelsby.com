@@ -25,14 +25,12 @@ jobs:
         env:
           JEKYLL_ENV: production
       
-      - name: Upload to Bunny CDN Storage
-        run: |
-          find _site -type f | while read file; do
-            echo "Uploading: $file"
-            curl -s -T "$file" \
-              -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
-              "https://storage.bunnycdn.com/gundelsby-com-webpage/${file#_site/}" \
-              --fail || { echo "❌ Failed uploading $file" ; exit 1; }
-          done
+      - name: Install bunny-launcher
+        run: npm install -g bunny-launcher
+
+      - name: Deploy to Bunny CDN Storage
+        run: bunny-launcher deploy ./_site --storage-zone gundelsby-com-webpage
+        env:
+          BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
 
   
