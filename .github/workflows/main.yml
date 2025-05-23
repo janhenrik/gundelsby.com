@@ -35,4 +35,37 @@ jobs:
               --fail || { echo "❌ Failed uploading $file" ; exit 1; }
           done
 
+      - name: Delete removed files from Bunny CDN Storage
+        run: |
+          set -e
+          ACCESS_KEY="${{ secrets.BUNNY_STORAGE_PASSWORD }}"
+          ZONE="gundelsby-com-webpage"
+
+          find _site -type f -printf '%P\n' | sort > local-files.txt
+
+          list_remote() {
+            local path="$1"
+            curl -s -H "AccessKey: $ACCESS_KEY" "https://storage.bunnycdn.com/$ZONE/$path" |
+              jq -r '.[] | [.ObjectName, .IsDirectory] | @tsv' |
+              while IFS=$'\t' read name isdir; do
+                if [ "$isdir" = "true" ]; then
+                  list_remote "$path$name/"
+                else
+                  echo "$path$name"
+                fi
+              done
+          }
+
+          list_remote "" | sort > remote-files.txt
+          comm -23 remote-files.txt local-files.txt > to-delete.txt
+
+          while read file; do
+            [ -z "$file" ] && continue
+            echo "Deleting: $file"
+            curl -X DELETE -s \
+              -H "AccessKey: $ACCESS_KEY" \
+              "https://storage.bunnycdn.com/$ZONE/$file" \
+              --fail || { echo "❌ Failed deleting $file" ; exit 1; }
+          done < to-delete.txt
+
   
