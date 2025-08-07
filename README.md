@@ -2,6 +2,8 @@
 
 This repository contains the source for Jan Henrik's personal website. The site is built with [Jekyll](https://jekyllrb.com/) using the [cvless](https://github.com/piazzai/cvless) theme.
 
+The site exposes [schema.org](https://schema.org) `Person` metadata to help search engines and chatbots better understand its content.
+
 ## Local development with Docker
 
 1. Ensure [Docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) are installed.

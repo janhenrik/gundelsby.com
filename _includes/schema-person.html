@@ -1,0 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name | escape }}",
+  "url": "{{ site.url | absolute_url }}",
+  "image": "{{ site.photo | relative_url | absolute_url }}",
+  "sameAs": [
+    {% if site.social.github %}"https://github.com/{{ site.social.github }}"{% endif %}{% if site.social.linkedin %},{% if site.social.github %} {% endif %}"https://www.linkedin.com/in/{{ site.social.linkedin }}"{% endif %}
+  ]
+}
+</script>
