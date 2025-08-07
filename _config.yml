@@ -59,4 +59,19 @@ pagination:
 jekyll_analytics:
   GoogleAnalytics:          
     id: UA-123-456          
-    anonymizeIp: false      
+    anonymizeIp: false
+
+# SEO settings
+seo:
+  name: Jan Henrik Gundelsby
+  type: Person
+  description: "Head of R&D specializing in IT strategy, technical leadership, DevOps, and lean methodology for modern enterprises"
+  keywords: "technical leadership, DevOps, cloud strategy, machine learning, lean methodology, autonomous teams, R&D management"
+
+# Additional metadata for better AI/chatbot discoverability
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: Jan Henrik Gundelsby
+      image: /assets/jpg/avatar.png      
