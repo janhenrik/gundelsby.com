@@ -28,11 +28,11 @@ def format_paper(pub):
     # Build citation info
     citation_parts = []
     if venue:
-        citation_parts.append(venue)
+        citation_parts.append(str(venue))
     if citation:
-        citation_parts.append(citation)
+        citation_parts.append(str(citation))
     if year:
-        citation_parts.append(year)
+        citation_parts.append(str(year))
 
     citation_text = ", ".join(filter(None, citation_parts))
 
