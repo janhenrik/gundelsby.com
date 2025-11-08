@@ -30,10 +30,7 @@ jobs:
           pip install -r scripts/requirements.txt
 
       - name: Run update script
-        run: |
-          cd scripts
-          python update_papers.py
-          cd ..
+        run: python scripts/update_papers.py
 
       - name: Check for changes
         id: check_changes
