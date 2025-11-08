@@ -3,13 +3,17 @@
 Script to automatically update papers.md from Google Scholar profile.
 """
 
+import os
 import re
 from scholarly import scholarly
 import time
 
 # Configuration
 SCHOLAR_ID = "4bw3LsEAAAAJ"
-OUTPUT_FILE = "papers.md"
+# Get the repository root (parent of scripts directory)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+OUTPUT_FILE = os.path.join(REPO_ROOT, "papers.md")
 
 def format_authors(authors):
     """Format author names."""
