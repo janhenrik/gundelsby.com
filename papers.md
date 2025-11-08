@@ -6,6 +6,10 @@ title: papers
 
 [Also see Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)
 
+- [DebtQuest: Discover Technical Debt Management Issues with Survey Visualization](https://ieeexplore.ieee.org/abstract/document/11175668)
+  M Irgens, M Orucevic, M Boye, JH Gundelsby, A Martini
+  2025 IEEE Working Conference on Software Visualization (VISSOFT), 25-35
+
 - [Responsible AI in Agile Software Engineering - An Industry Perspective](https://link.springer.com/chapter/10.1007/978-3-031-72781-8_4)
   Rasmus Ulfsnes, Nils Brede Moe, Jostein Emmerhoff, Marcin Floryan, Anastasia Griva, Jan Henrik Gundelsby, Astri Moksnes Barbala & Kieran Conboy 
   In: Marchesi, L., et al. Agile Processes in Software Engineering and Extreme Programming – Workshops. XP 2024. Lecture Notes in Business Information Processing, vol 524. Springer, Cham.
