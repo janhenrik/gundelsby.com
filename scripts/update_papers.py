@@ -12,14 +12,37 @@ SCHOLAR_ID = "4bw3LsEAAAAJ"
 OUTPUT_FILE = "papers.md"
 
 def format_authors(authors):
-    """Format author names, highlighting JH Gundelsby."""
-    author_list = ", ".join(authors)
-    return author_list
+    """Format author names."""
+    # scholarly returns authors as a string, not a list
+    if isinstance(authors, str):
+        return authors
+    elif isinstance(authors, list):
+        return ", ".join(authors)
+    return ""
+
+def is_valid_publication(pub):
+    """Check if publication data is valid and not malformed."""
+    title = pub['bib'].get('title', '')
+
+    # Skip if no title
+    if not title or title == 'No title':
+        return False
+
+    # Skip if title is suspiciously long (likely malformed data)
+    if len(title) > 200:
+        return False
+
+    # Skip if title looks like it contains author lists or indexes
+    # (e.g., contains ", and" patterns or lots of numbers)
+    if ', and ' in title.lower() and len(title) > 100:
+        return False
+
+    return True
 
 def format_paper(pub):
     """Format a publication entry for papers.md."""
     title = pub['bib'].get('title', 'No title')
-    authors = pub['bib'].get('author', [])
+    authors = pub['bib'].get('author', '')
     venue = pub['bib'].get('venue', '')
     year = pub['bib'].get('pub_year', '')
     citation = pub['bib'].get('citation', '')
@@ -96,14 +119,24 @@ title: papers
 
     content = header
 
+    valid_count = 0
+    skipped_count = 0
+
     for pub in publications:
-        content += format_paper(pub) + "\n"
+        if is_valid_publication(pub):
+            content += format_paper(pub) + "\n"
+            valid_count += 1
+        else:
+            skipped_count += 1
+            print(f"Skipping malformed entry: {pub['bib'].get('title', 'No title')[:80]}...")
 
     # Write to file
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
 
-    print(f"Successfully updated {OUTPUT_FILE} with {len(publications)} publications")
+    print(f"Successfully updated {OUTPUT_FILE} with {valid_count} publications")
+    if skipped_count > 0:
+        print(f"Skipped {skipped_count} malformed entries")
 
 def main():
     """Main function."""
