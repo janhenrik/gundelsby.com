@@ -22,7 +22,7 @@ title: papers
   V Stray, JH Gundelsby, R Ulfsnes, N Brede Moe  
   Proceedings of the International Conference on Software and System Processes …, 13, 2022
 
-- [Enabling autonomous teams in large-scale agile through architectural principles](https://sintef.brage.unit.no/sintef-xmlui/bitstream/handle/11250/2996878/Gundelsby_2018_Enabling_autonomous_teams_AAM.pdf?sequence=1)  
+- [Enabling autonomous teams in large-scale agile through architectural principles](https://www.researchgate.net/profile/Jan-Henrik-Gundelsby/publication/332855129_Enabling_autonomous_teams_in_large-scale_agile_through_architectural_principles/links/626138521b747d19c29c484e/Enabling-autonomous-teams-in-large-scale-agile-through-architectural-principles.pdf)  
   JH Gundelsby  
   Proceedings of the 19th International Conference on Agile Software …, 16, 2018
 
