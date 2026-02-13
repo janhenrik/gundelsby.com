@@ -11,11 +11,13 @@ title: Curriculum Vitae
 - Company: [knowit.no](http://www.knowit.no)
 
 ## Summary
-Bridging the gap between academia and practice, focusing on digital transformation, large scale agile, and platformization. Advocating community of practice and lifetime education of consultants. Technology advisory, public speaking, and sales/marketing.
+Bridging the gap between academia and practice, focusing on digital transformation, human-AI collaboration, and large-scale agile. Advocating community of practice and lifelong education of consultants. Technology advisory, public speaking, and research dissemination.
 
-Strong knowledge of current and emerging technologies and products. IT strategy, technical leadership for modern Lean Enterprise, mentoring, DevOps, lean methodology, and autonomous teams. 
+Strong knowledge of current and emerging technologies, with over 25 years of experience as a developer, architect, and technology leader. IT strategy, technical leadership for the modern Lean Enterprise, mentoring, DevOps, lean methodology, and autonomous teams. 
 
-Technical specialties include integrating solutions in large enterprise architectures, especially Microservice architectures, problem-solving, technical leadership, team management, large-scale agile, network administration (Linux), and DevOps.
+Published researcher on agile teams, human-AI collaboration, and digital transformation. Public speaking – see http://gundelsby.com
+
+Technical specialties: Building DevOps culture and product organizations in large enterprises. Microservices architecture, technical leadership, team management, large-scale agile, and platform engineering.
 
 ## Experience
 
