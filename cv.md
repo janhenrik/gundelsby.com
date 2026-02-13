@@ -21,7 +21,7 @@ Technical specialties: Building DevOps culture and product organizations in larg
 
 ## Experience
 
-### Head of Research And Development  
+### Head of Knowit Research
 **Knowit** | _September 2020 – Present_
 - Bridging academia and practice with a focus on digitalization, large-scale agile, and platformization
 - Advocating community of practice and lifetime education for consultants
