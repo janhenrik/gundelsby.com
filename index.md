@@ -7,7 +7,7 @@ title: Home
 
 ### Hi there 👋
 
-- 🔭 I’m currently working as Head of R&D @ [Knowit Solutions](https://github.com/knowit) 
+- 🔭 I’m currently working as Head of Knowit Research @ [Knowit Solutions](https://github.com/knowit) 
 - 💼 [CV](/cv) or [LinkedIn](https://www.linkedin.com/in/janhenrikgundelsby/)
 - 🤓 I’m currently learning Machine Learning and Cloud computing!
 - 💬 Ask me about IT and cloud strategy, technical leadership for the modern Lean Enterprise, mentoring, DevOps, lean methodology and autonomous teams. 
