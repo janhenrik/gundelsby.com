@@ -75,7 +75,7 @@ Technical specialties: Building DevOps culture and product organizations in larg
 - Databricks Certified Data Engineer Associate
 
 ## Publications
-- [Gundelsby.com – academic papers (in Norwegian)](/papers)
+- [Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)
 - [Gundelsby.com – talks (in Norwegian)](/foredrag)
 
 
