@@ -33,6 +33,14 @@ jobs:
               -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
               "https://storage.bunnycdn.com/gundelsby-com-webpage/${file#_site/}" \
               --fail || { echo "❌ Failed uploading $file" ; exit 1; }
+
+      - name: Purge Bunny CDN Cache
+        run: |
+          curl -s -X POST \
+            -H "AccessKey: ${{ secrets.BUNNY_API_KEY }}" \
+            "https://api.bunny.net/pullzone/${{ secrets.BUNNY_PULL_ZONE_ID }}/purgeCache" \
+            --fail || { echo "❌ Cache purge failed" ; exit 1; }
+          echo "✅ CDN cache purged successfully"
           done
 
   
