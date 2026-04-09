@@ -5,7 +5,7 @@ title: Foredrag
 ## Foredrag
 
 
-- [XP 2026](https://conf.researchr.org/track/xp-2026/xp-2026-human-ai-collaboration#program) » "I'll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams (med Marthe Berntzen, Camilla Grøneng og Dan Vigeland)
+- [XP 2026](https://conf.researchr.org/track/xp-2026/xp-2026-human-ai-collaboration#program) » "I'll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams
 - [JavaZone 2025](https://vimeo.com/1115500728) » Fremtidens produktutvikling med AI - innsikter fra norsk forskning (med Nils Brede Moe)
 - [JavaZone 2024](https://vimeo.com/1006510882) » 10 resultater fra 10 år med forskning på team (med Nils Brede Moe)
 - [Undervisning UiO 2023 - IT og Ledelse - Produktorganisering og OKR](https://www.slideshare.net/janhenrik2/20230323itledproduktorganiseringogokrpdf) » ITLED4350 Produktorganisering og OKR
