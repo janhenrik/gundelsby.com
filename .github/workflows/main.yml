@@ -25,33 +25,15 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: List storage zone contents
-        run: |
-          echo "=== Root ==="
-          curl -s -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
-            "https://storage.bunnycdn.com/gundelsby-com-webpage/" | python3 -m json.tool
-          echo "=== foredrag/ ==="
-          curl -s -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
-            "https://storage.bunnycdn.com/gundelsby-com-webpage/foredrag/" | python3 -m json.tool
-
       - name: Upload to Bunny CDN Storage
         run: |
           find _site -type f | while read file; do
             echo "Uploading: $file"
             curl -s -T "$file" \
               -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
-              "https://storage.bunnycdn.com/gundelsby-com-webpage/${file#_site/}" \
+              "https://storage.bunnycdn.com/gundelsby-com/${file#_site/}" \
               --fail || { echo "❌ Failed uploading $file" ; exit 1; }
           done
-
-      - name: List foredrag after upload
-        run: |
-          echo "=== foredrag/ after upload ==="
-          curl -s -H "AccessKey: ${{ secrets.BUNNY_STORAGE_PASSWORD }}" \
-            "https://storage.bunnycdn.com/gundelsby-com-webpage/foredrag/" | python3 -m json.tool
-
-      - name: Wait for storage replication
-        run: sleep 60
 
       - name: Purge Bunny CDN Cache
         run: |
