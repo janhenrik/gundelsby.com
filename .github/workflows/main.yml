@@ -35,6 +35,9 @@ jobs:
               --fail || { echo "❌ Failed uploading $file" ; exit 1; }
           done
 
+      - name: Wait for storage replication
+        run: sleep 60
+
       - name: Purge Bunny CDN Cache
         run: |
           curl -s -X POST \
