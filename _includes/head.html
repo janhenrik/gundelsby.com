@@ -20,6 +20,14 @@
   <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
 
+  {% if page.layout == "home" %}
+  <link rel="author" href="{{ '/cv' | relative_url }}">
+  <link rel="me" href="https://github.com/{{ site.social.github }}">
+  <link rel="me" href="https://www.linkedin.com/in/{{ site.social.linkedin }}/">
+  <link rel="me" href="mailto:{{ site.author.email }}">
+  <link rel="license" href="{{ site.repo }}/blob/main/LICENSE">
+  {% endif %}
+
   {% seo title=false %}
   {% include schema-person.html %}
 </head>
