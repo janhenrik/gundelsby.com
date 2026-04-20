@@ -20,6 +20,18 @@
   <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
 
+  {% assign _path = page.path | default: "" %}
+  {% if _path contains ".md" or _path contains ".markdown" %}
+    {% if page.url == "/" %}
+      {% assign _md_url = "/index.md" %}
+    {% elsif page.url contains ".html" %}
+      {% assign _md_url = page.url | replace: ".html", ".md" %}
+    {% else %}
+      {% assign _md_url = page.url | append: "index.md" %}
+    {% endif %}
+  <link rel="alternate" type="text/markdown" href="{{ _md_url | relative_url }}">
+  {% endif %}
+
   {% if page.layout == "home" %}
   <link rel="author" href="{{ '/cv' | relative_url }}">
   <link rel="me" href="https://github.com/{{ site.social.github }}">
