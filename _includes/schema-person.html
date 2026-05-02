@@ -3,10 +3,27 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "{{ site.author.name | escape }}",
+  "givenName": "Jan Henrik",
+  "familyName": "Gundelsby",
+  "jobTitle": "Head of Knowit Research",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Knowit Solutions",
+    "url": "https://www.knowit.no/"
+  },
   "url": "{{ site.url | absolute_url }}",
   "image": "{{ site.photo | relative_url | absolute_url }}",
+  "email": "{{ site.author.email }}",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "0000-0001-5275-6553"
+  },
   "sameAs": [
-    {% if site.social.github %}"https://github.com/{{ site.social.github }}"{% endif %}{% if site.social.linkedin %},{% if site.social.github %} {% endif %}"https://www.linkedin.com/in/{{ site.social.linkedin }}"{% endif %}
+    "https://orcid.org/0000-0001-5275-6553",
+    "https://scholar.google.com/citations?user=4bw3LsEAAAAJ",
+    "https://www.linkedin.com/in/{{ site.social.linkedin }}",
+    "https://github.com/{{ site.social.github }}"
   ]
 }
 </script>

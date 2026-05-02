@@ -65,8 +65,8 @@ jekyll_analytics:
 seo:
   name: Jan Henrik Gundelsby
   type: Person
-  description: "Head of R&D specializing in IT strategy, technical leadership, DevOps, and lean methodology for modern enterprises"
-  keywords: "technical leadership, DevOps, cloud strategy, machine learning, lean methodology, autonomous teams, R&D management"
+  description: "Head of Knowit Research specializing in enterprise architecture, AI adoption, large-scale agile, DevOps, and lean methodology for modern enterprises"
+  keywords: "enterprise architecture, AI adoption, large-scale agile, technical leadership, DevOps, lean methodology, autonomous teams, human-AI collaboration"
 
 # Additional metadata for better AI/chatbot discoverability
 defaults:
