@@ -22,4 +22,7 @@
 
   {% seo title=false %}
   {% include schema-person.html %}
+  {% if page.schema == "publications" %}
+  {% include schema-publications.html %}
+  {% endif %}
 </head>

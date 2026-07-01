@@ -12,7 +12,8 @@ title: Home
 - 🤓 I’m currently learning Machine Learning and Cloud computing!
 - 💬 Ask me about IT and cloud strategy, technical leadership for the modern Lean Enterprise, mentoring, DevOps, lean methodology and autonomous teams. 
 - 🗣 [Public speaking](/foredrag) (in Norwegian)
-- 🔬 [Published papers](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)
+- 🔬 [Published papers](/publications)
+- 🆔 <a rel="me" href="https://orcid.org/0000-0001-5275-6553">ORCID: 0000-0001-5275-6553</a>
 - 📫 How to reach me: [janhenrik@gundelsby.com](mailto:janhenrik@gundelsby.com) or on [LinkedIn](https://www.linkedin.com/in/janhenrikgundelsby/)
 - 😄 Pronouns: he/him.
 

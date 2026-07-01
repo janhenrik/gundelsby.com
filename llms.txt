@@ -5,12 +5,14 @@
 ## Primary pages
 - [Home](https://gundelsby.com/): Bio, current role, contact.
 - [CV](https://gundelsby.com/cv): Professional history, education, certifications.
+- [Publications](https://gundelsby.com/publications): Published papers.
 - [Talks / Foredrag](https://gundelsby.com/foredrag): Public speaking (mostly Norwegian).
 
 ## Profiles
+- [ORCID](https://orcid.org/0000-0001-5275-6553)
+- [Semantic Scholar](https://www.semanticscholar.org/author/117950039)
 - [Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)
 - [LinkedIn](https://www.linkedin.com/in/janhenrikgundelsby/)
-- [ORCID](https://orcid.org/0000-0001-5275-6553)
 - [GitHub](https://github.com/janhenrik)
 
 ## Contact
