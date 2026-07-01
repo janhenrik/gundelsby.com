@@ -1,0 +1,83 @@
+identity:
+  name: Jan Henrik Gundelsby
+  given_name: Jan Henrik
+  family_name: Gundelsby
+  orcid: 0000-0001-5275-6553
+  orcid_url: https://orcid.org/0000-0001-5275-6553
+  semantic_scholar_url: https://www.semanticscholar.org/author/117950039
+  knowit_url: https://www.knowit.no/om-oss/forskning/
+  linkedin_url: https://www.linkedin.com/in/janhenrikgundelsby/
+  github_url: https://github.com/janhenrik
+  affiliation:
+    name: Knowit
+    url: https://www.knowit.no/
+  job_title: Head of Knowit Research
+  description: PhD researcher focused on large-scale agile and AI-human collaboration
+
+works:
+  - year: 2026
+    title: '"I''ll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams'
+    doi: 10.13140/rg.2.2.19621.67040
+    venue: Preprint
+    authors:
+      - name: Gundelsby, Jan Henrik
+        orcid: true
+      - name: Berntzen, Marthe
+      - name: Grøneng, C.
+      - name: Vigeland, D.
+
+  - year: 2025
+    title: Responsible AI in Agile Software Engineering — An Industry Perspective
+    doi: 10.1007/978-3-031-72781-8_4
+    venue: LNBIP (Int. Conf. Agile Software Development / XP)
+    authors:
+      - name: Ulfsnes, R.
+      - name: Moe, Nils Brede
+      - name: Emmerhoff, J.
+      - name: Floryan, M.
+      - name: Griva, A.
+      - name: Gundelsby, Jan Henrik
+        orcid: true
+    et_al: true
+
+  - year: 2025
+    title: 'DebtQuest: Discover Technical Debt Management Issues with Survey Visualization'
+    doi: 10.1109/vissoft67405.2025.00011
+    venue: IEEE Working Conf. on Software Visualization (VISSOFT)
+    authors:
+      - name: Irgens, M.
+      - name: Orucevic, M.
+      - name: Boye, M.
+      - name: Gundelsby, Jan Henrik
+        orcid: true
+      - name: Martini, A.
+
+  - year: 2023
+    title: 'The Future of Hybrid Software Development: Challenging Current Assumptions'
+    doi: 10.1109/ms.2022.3230449
+    venue: IEEE Software 40(2)
+    authors:
+      - name: Conboy, K.
+      - name: Moe, Nils Brede
+      - name: Stray, Viktoria
+      - name: Gundelsby, Jan Henrik
+        orcid: true
+
+  - year: 2022
+    title: How Agile Teams Make Objectives and Key Results (OKRs) Work
+    doi: 10.1145/3529320.3529332
+    venue: ICSSP/ICGSE (Int. Conf. Software and System Processes)
+    authors:
+      - name: Stray, Viktoria
+      - name: Gundelsby, Jan Henrik
+        orcid: true
+      - name: Ulfsnes, R.
+      - name: Moe, Nils Brede
+
+  - year: 2018
+    title: Enabling Autonomous Teams in Large-Scale Agile Through Architectural Principles
+    doi: 10.1145/3234152.3234183
+    venue: XP Companion (19th Int. Conf. Agile Software Development)
+    authors:
+      - name: Gundelsby, Jan Henrik
+        orcid: true
