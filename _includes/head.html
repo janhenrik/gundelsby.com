@@ -20,6 +20,11 @@
   <link rel="manifest" href="{{ '/assets/site.webmanifest' | relative_url }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ 'atom.xml' | relative_url }}">
 
+  <!-- Agent discovery (RFC 8288 link relations, IANA-registered rel values) -->
+  <link rel="describedby" type="text/markdown" href="{{ '/llms.txt' | relative_url }}">
+  <link rel="author" href="{{ '/cv' | relative_url }}">
+  <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}">
+
   {% seo title=false %}
   {% include schema-person.html %}
   {% if page.schema == "publications" %}

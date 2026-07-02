@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
+
+# Content Signals (contentsignals.org / draft-romm-aipref-contentsignals)
+# search: allow use for building a search index
+# ai-input: allow use as input to AI assistants answering questions (RAG/inference)
+# ai-train: allow use as training-corpus material for AI models
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
 Sitemap: https://gundelsby.com/sitemap.xml
