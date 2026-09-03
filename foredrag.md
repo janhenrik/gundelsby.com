@@ -5,6 +5,7 @@ title: Foredrag
 ## Foredrag
 
 
+- [JavaZone 2026](https://vimeo.com/1223394835) » Norsk forskning - Hva gjør norske organisasjoner med agentisk utvikling (med Nils Brede Moe)
 - [XP 2026](https://conf.researchr.org/track/xp-2026/xp-2026-human-ai-collaboration#program) » "I'll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams
 - [JavaZone 2025](https://vimeo.com/1115500728) » Fremtidens produktutvikling med AI - innsikter fra norsk forskning (med Nils Brede Moe)
 - [JavaZone 2024](https://vimeo.com/1006510882) » 10 resultater fra 10 år med forskning på team (med Nils Brede Moe)
