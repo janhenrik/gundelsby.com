@@ -22,16 +22,16 @@ Technical specialties: Building DevOps culture and product organizations in larg
 
 ## Experience
 
-### Lecturer (Universitetslektor), Software Engineering – 10% position
-**[Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)** | _2026 – Present_
-- Part-time teaching position in software engineering, alongside the role at Knowit
-- Bringing industry experience and research on agile teams and human-AI collaboration into teaching
-
 ### Head of Knowit Research
 **Knowit** | _September 2020 – Present_
 - Bridging academia and practice with a focus on digitalization, large-scale agile, and platformization
 - Advocating community of practice and lifetime education for consultants
 - Technology advisory, public speaking, and sales/marketing
+
+### Lecturer (Universitetslektor), Software Engineering – 10% position
+**[Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)** | _2026 – Present_
+- Part-time teaching position in software engineering, alongside the role at Knowit
+- Bringing industry experience and research on agile teams and human-AI collaboration into teaching
 
 ### Service Platform Lead  
 **Oslo Origo** | _April 2020 – September 2020_
