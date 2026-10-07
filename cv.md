@@ -28,7 +28,7 @@ Technical specialties: Building DevOps culture and product organizations in larg
 - Advocating community of practice and lifetime education for consultants
 - Technology advisory, public speaking, and sales/marketing
 
-### Lecturer (Universitetslektor), Software Engineering – 10% position
+### Lecturer (Universitetslektor), Software Engineering – part-time
 **[Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)** | _2026 – Present_
 - Part-time teaching position in software engineering, alongside the role at Knowit
 - Bringing industry experience and research on agile teams and human-AI collaboration into teaching

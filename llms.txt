@@ -1,6 +1,6 @@
 # Jan Henrik Gundelsby
 
-> Head of Knowit Research at Knowit Solutions (Oslo) and part-time Lecturer (Universitetslektor, 10%) in Software Engineering at the Department of Informatics, University of Oslo. Work and research across enterprise architecture, AI adoption, agile organizations, DevOps, and large-scale agile. ORCID 0000-0001-5275-6553.
+> Head of Knowit Research at Knowit Solutions (Oslo) and part-time Lecturer (Universitetslektor) in Software Engineering at the Department of Informatics, University of Oslo. Work and research across enterprise architecture, AI adoption, agile organizations, DevOps, and large-scale agile. ORCID 0000-0001-5275-6553.
 
 ## Primary pages
 - [Home](https://gundelsby.com/): Bio, current role, contact.
