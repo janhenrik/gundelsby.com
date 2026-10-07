@@ -9,9 +9,10 @@ title: Curriculum Vitae
 - LinkedIn: [janhenrikgundelsby](https://www.linkedin.com/in/janhenrikgundelsby)
 - Personal Website: [gundelsby.com](http://www.gundelsby.com)
 - Company: [knowit.no](http://www.knowit.no)
+- University of Oslo: [jangu@ifi.uio.no](mailto:jangu@ifi.uio.no) · [Staff profile](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)
 
 ## Summary
-Bridging the gap between academia and practice, focusing on digital transformation, human-AI collaboration, and large-scale agile. Advocating community of practice and lifelong education of consultants. Technology advisory, public speaking, and research dissemination.
+Head of Knowit Research and part-time Lecturer in Software Engineering at the University of Oslo. Bridging the gap between academia and practice, focusing on digital transformation, human-AI collaboration, and large-scale agile. Advocating community of practice and lifelong education of consultants. Technology advisory, public speaking, and research dissemination.
 
 Strong knowledge of current and emerging technologies, with over 25 years of experience as a developer, architect, and technology leader. IT strategy, technical leadership for the modern Lean Enterprise, mentoring, DevOps, lean methodology, and autonomous teams. 
 
@@ -20,6 +21,11 @@ Published researcher on agile teams, human-AI collaboration, and digital transfo
 Technical specialties: Building DevOps culture and product organizations in large enterprises. Microservices architecture, technical leadership, team management, large-scale agile, and platform engineering.
 
 ## Experience
+
+### Lecturer (Universitetslektor), Software Engineering – 10% position
+**[Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)** | _2026 – Present_
+- Part-time teaching position in software engineering, alongside the role at Knowit
+- Bringing industry experience and research on agile teams and human-AI collaboration into teaching
 
 ### Head of Knowit Research
 **Knowit** | _September 2020 – Present_

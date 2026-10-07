@@ -6,12 +6,19 @@
   "name": "{{ site.author.name | escape }}",
   "givenName": "Jan Henrik",
   "familyName": "Gundelsby",
-  "jobTitle": "Head of Knowit Research",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Knowit Solutions",
-    "url": "https://www.knowit.no/"
-  },
+  "jobTitle": ["Head of Knowit Research", "Lecturer in Software Engineering (Universitetslektor, 10%)"],
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Knowit Solutions",
+      "url": "https://www.knowit.no/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Oslo, Department of Informatics",
+      "url": "https://www.mn.uio.no/ifi/"
+    }
+  ],
   "url": "{{ site.url | absolute_url }}",
   "image": "{{ site.photo | relative_url | absolute_url }}",
   "email": "{{ site.author.email }}",
@@ -24,6 +31,7 @@
     "https://orcid.org/0000-0001-5275-6553",
     "https://www.semanticscholar.org/author/117950039",
     "https://www.knowit.no/om-oss/forskning/",
+    "https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu",
     "https://scholar.google.com/citations?user=4bw3LsEAAAAJ",
     "https://www.linkedin.com/in/{{ site.social.linkedin }}",
     "https://github.com/{{ site.social.github }}"
