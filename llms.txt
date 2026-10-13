@@ -1,6 +1,6 @@
 # Jan Henrik Gundelsby
 
-> Head of Knowit Research at Knowit (Oslo) and part-time Lecturer (Universitetslektor) in Software Engineering at the Department of Informatics, University of Oslo. Researches how organizations adopt AI agents in software development: human-AI collaboration, agentic software engineering, technical and cognitive debt, and large-scale agile. Administrative lead for the KAIROS research project on human-AI collaboration with SINTEF and industry partners. ORCID 0000-0001-5275-6553.
+> Head of Knowit Research at Knowit (Oslo) and part-time Lecturer (Universitetslektor) in Software Engineering at the Department of Informatics, University of Oslo. Researches how organizations adopt AI agents in software development: human-AI collaboration, agentic software engineering, technical and cognitive debt, and large-scale agile. Researcher in KAIROS, a Knowit-led research project on human-AI collaboration with SINTEF and industry partners. ORCID 0000-0001-5275-6553.
 
 ## Primary pages
 - [Home](https://gundelsby.com/): Bio, current role, contact.

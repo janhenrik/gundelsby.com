@@ -29,7 +29,7 @@ Technical specialties:
 
 ### Head of Knowit Research
 **[Knowit](https://www.knowit.no/om-oss/forskning/)** | _September 2020 – Present_
-- Administrative lead for KAIROS (2025–2029), a research project with SINTEF and industry partners on human-AI collaboration in software development
+- Researcher in KAIROS (2025–2029), a Knowit-led research project with SINTEF and industry partners on human-AI collaboration in software development
 - Embedded research on agent-driven development with clients, including a following study of an agentic migration at Tet Digital
 - Research partner in TechDebtOps (NFR IPN) on technical debt and PROSPECTS 5.0 (Horizon Europe) on Industry 5.0
 - Building research funding applications with SINTEF, UiO, NTNU, and international universities
