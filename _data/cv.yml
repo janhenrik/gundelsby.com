@@ -13,7 +13,7 @@ cv:
     <br><br>
     Over 30 years as a developer, architect, and technology leader, from microservices and DevOps in Oslo municipality to building and running agentic development setups today. IT strategy, technical leadership, mentoring, and lifelong learning for consultants.
     <br><br>
-    Published researcher on agile teams, human-AI collaboration, and technical debt. Regular speaker at JavaZone, XP, and other venues – see [talks](/foredrag/).
+    Published researcher on agile teams, human-AI collaboration, and technical debt. Regular speaker at JavaZone, XP, and other venues – see [talks](/talks/).
 
   social_networks:
     - network: LinkedIn
@@ -146,4 +146,4 @@ cv:
     Publications and Talks:
       - bullet: "[Gundelsby.com – publications](/publications/)"
       - bullet: "[Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)"
-      - bullet: "[Gundelsby.com – talks (in Norwegian)](/foredrag/)"
+      - bullet: "[Gundelsby.com – talks (in Norwegian)](/talks/)"

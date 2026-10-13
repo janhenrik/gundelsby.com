@@ -10,7 +10,7 @@ and related gems, see `Gemfile`).
 - `_data/socials.yml` – social icons on the home page
 - `_bibliography/papers.bib` – publications rendered by jekyll-scholar on `/publications/`
 - `_data/publications.yml` – the same papers as structured data for the schema.org JSON-LD on `/publications/`
-- `_data/talks.yml` – talks rendered on `/foredrag/`
+- `_data/talks.yml` – talks rendered on `/talks/`
 - `_data/cv.yml` – CV (RenderCV format) rendered on `/cv/` by `al_folio_cv`
 
 ## Profile metadata
