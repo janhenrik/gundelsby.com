@@ -42,8 +42,8 @@ jobs:
         run: python3 .github/scripts/bunny-prune.py
         env:
           BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
-          # Lists stale files only. Change to "delete" once the list looks right.
-          BUNNY_PRUNE_MODE: dry-run
+          # Set to "dry-run" to only list what would be deleted.
+          BUNNY_PRUNE_MODE: delete
 
       - name: Purge Bunny CDN Cache
         run: |
