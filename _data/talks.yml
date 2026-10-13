@@ -1,0 +1,116 @@
+# Talks (foredrag), newest first. Rendered by _pages/foredrag.md.
+# Fields: year, event, url (optional), title (verbatim, mostly Norwegian).
+- year: 2026
+  event: JavaZone 2026
+  url: https://vimeo.com/1223394835
+  title: Norsk forskning - Hva gjør norske organisasjoner med agentisk utvikling (med Nils Brede Moe)
+- year: 2026
+  event: XP 2026
+  url: https://conf.researchr.org/track/xp-2026/xp-2026-human-ai-collaboration#program
+  title: '"I''ll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams'
+- year: 2025
+  event: JavaZone 2025
+  url: https://vimeo.com/1115500728
+  title: Fremtidens produktutvikling med AI - innsikter fra norsk forskning (med Nils Brede Moe)
+- year: 2024
+  event: JavaZone 2024
+  url: https://vimeo.com/1006510882
+  title: 10 resultater fra 10 år med forskning på team (med Nils Brede Moe)
+- year: 2023
+  event: Undervisning UiO 2023 - IT og Ledelse - Produktorganisering og OKR
+  url: https://www.slideshare.net/janhenrik2/20230323itledproduktorganiseringogokrpdf
+  title: ITLED4350 Produktorganisering og OKR
+- year: 2022
+  event: Arendalsuka 2022
+  url: https://www.slideshare.net/janhenrik2/20220818-arendalsuka-organisering-av-produtviklingsteam-i-store-organisasjonerpdf
+  title: Organisering av produktutvikling i store organisasjoner
+- year: 2021
+  event: JavaZone 2021
+  url: https://vimeo.com/677812664
+  title: Dynamisk DNS med AWS Lambda og Route 53
+- year: 2021
+  event: NOKIOS 2021
+  url: https://www.youtube.com/watch?v=rCcilTtTxbc
+  title: Hva sier forskningen om datadreven digital transformasjon i offentlig sektor?
+- year: 2019
+  event: JavaZone 2019
+  url: https://vimeo.com/362754811
+  title: 'Det er greit å gjøre feil: 20 år med tabber'
+- year: 2019
+  event: Smidig digitalisering 2019
+  url: https://vimeo.com/339704697
+  title: Slik gjennomfører vi digital transformasjon i Oslo kommune (med Tine Reuterdahl)
+- year: 2019
+  event: Software 2019
+  url: https://event.dnd.no/software/sessions/slik-gjennomforer-vi-digital-transformasjon-i-oslo-kommune/
+  title: Slik gjennomfører vi digital transformasjon i Oslo kommune (med Tine Reuterdahl)
+- year: 2018
+  event: JavaZone 2018
+  url: https://vimeo.com/289520157
+  title: 'Fra forskningen: hvordan arkitektur kan muliggjøre autonome team i storskala'
+- year: 2018
+  event: NDC TechTown 2018
+  url: https://www.youtube.com/watch?v=rCk0OcnLMlY
+  title: Agile Development at Scale With Autonomous teams (with Thomas Malt)
+- year: 2017
+  event: NOKIOS 2017
+  url: https://www.slideshare.net/janhenrik2/nokios-2017-storskala-smidig
+  title: Stor-skala smidig i Oslo kommune
+- year: 2017
+  event: Software 2017
+  url: https://event.dnd.no/software/sessions/bimodal-it-kombinasjonen-kontinuerlige-og-tradisjonelle-leveranser/
+  title: 'Bimodal IT: Kombinasjonen kontinuerlige og tradisjonelle leveranser'
+- year: 2016
+  event: Smidig 2016
+  url: https://vimeo.com/190175005
+  title: 'Video: Kombinasjonen DevOps og tradisjonelle leveranser'
+- year: 2016
+  event: Software 2016
+  url: http://www.slideshare.net/janhenrik2/skalering-av-store-enterprisesystmer-med-apifirst
+  title: Skalering av store enterprisesystemer med API-first
+- year: 2015
+  event: JavaZone 2015
+  url: https://vimeo.com/138769064
+  title: 'Video: Bygg for endring'
+- year: 2015
+  event: OSWA Meetup 2015
+  url: http://www.meetup.com/Oslo-Software-Architecture/events/220440883/?showAttendance=true&showFullList=yes%2Cno#no
+  title: Mikrotjenester-arki­­tektur i praksis (ingen foiler)
+- year: 2015
+  event: DND 2015
+  url: http://www.dataforeningen.no/integrasjon-i-oslo-kommune-loese-koblinger-og-fleksibilitet-gjennom-mikrotjenester-smidig-utvikling-og-devops-venteliste.5721638-134140.html
+  title: Integrasjon i Oslo kommune
+- year: 2014
+  event: JavaZone 2014
+  url: http://vimeo.com/105777594
+  title: 'Video: Erfaringer fra 150 mikrotjenester - fordeler og ulemper'
+- year: 2014
+  event: Software 2014
+  url: http://sched.co/1cwkBPI
+  title: DevOps og kontinuerlige leveranser i Oslo kommune
+- year: 2013
+  event: JavaZone 2013
+  url: http://vimeo.com/74415652
+  title: 'Video: Integrasjon som skalerer ved å gi utviklerne kontrollen'
+- year: 2013
+  event: Software 2013
+  title: You can go wrong with beige
+- year: 2012
+  event: JavaZone 2012
+  url: http://vimeo.com/49381224
+  title: 'Video: Maven release med Ruby'
+- year: 2012
+  event: GoOpen 2012
+  title: Forvaltning av fri og åpen programvare
+- year: 2012
+  event: Software 2012
+  url: http://www.youtube.com/watch?v=pMGJ_9yxlZA
+  title: 'Video: Integrasjon uten et ESB-produkt'
+- year: 2011
+  event: JavaZone 2011
+  url: http://vimeo.com/28759841
+  title: 'Video: SOA uten ESB'
+- year: 2009
+  event: JavaZone 2009
+  url: http://vimeo.com/46284670
+  title: 'Video: Arkitekturtabber vi ikke gjør om igjen'

@@ -1,0 +1,148 @@
+# CV in RenderCV-style YAML, rendered by the al_folio_cv plugin (layout: cv).
+# Text is kept verbatim from the previous cv.md. The `summary` of each
+# experience entry holds the exact period text; start_date/end_date drive
+# sorting and the year badge.
+cv:
+  name: Jan Henrik Gundelsby
+  label: Head of Knowit Research · Part-time Lecturer in Software Engineering, University of Oslo
+  email: janhenrik@gundelsby.com
+  website: https://gundelsby.com
+  location: Oslo, Norway
+  summary: >-
+    Head of Knowit Research and part-time Lecturer in Software Engineering at the University of Oslo. I study how organizations adopt AI agents in software development, and help them do it. Bridging academia and practice on human-AI collaboration, agentic software engineering, technical debt, and large-scale agile.
+    <br><br>
+    Over 30 years as a developer, architect, and technology leader, from microservices and DevOps in Oslo municipality to building and running agentic development setups today. IT strategy, technical leadership, mentoring, and lifelong learning for consultants.
+    <br><br>
+    Published researcher on agile teams, human-AI collaboration, and technical debt. Regular speaker at JavaZone, XP, and other venues – see [talks](/foredrag/).
+
+  social_networks:
+    - network: LinkedIn
+      username: janhenrikgundelsby
+    - network: GitHub
+      username: janhenrik
+    - network: ORCID
+      username: 0000-0001-5275-6553
+
+  sections:
+    Technical Specialties:
+      - bullet: "**Agentic software engineering:** adopting and scaling AI coding agents in teams, human-in-the-loop workflows, and harness and context engineering (skills, agent instructions, evaluation)"
+      - bullet: "**AI adoption research:** following organizations through agent-driven change, maturity baselines, and measuring real effect beyond the hype"
+      - bullet: "**Technical and cognitive debt:** managing debt in codebases and teams, including the new kinds AI-generated code creates"
+      - bullet: "**Platforms and organization:** platform engineering, product organization, DevOps, and large-scale agile in large enterprises and the public sector"
+      - bullet: "**Cloud and data:** AWS and Databricks certified; microservices and integration architecture"
+
+    Experience:
+      - position: Head of Knowit Research
+        company: <a href="https://www.knowit.no/om-oss/forskning/">Knowit</a>
+        start_date: 2020-09
+        end_date: present
+        summary: September 2020 – Present
+        highlights:
+          - Researcher in KAIROS (2025–2029), a Knowit-led research project with SINTEF and industry partners on human-AI collaboration in software development
+          - Led TransformIT (2021–2025), a Knowit research project with SINTEF and industry partners on data-driven digital transformation, product teams, hybrid work, and team improvement
+          - Embedded research on agent-driven development with clients, including a following study of an agentic migration at Tet Digital
+          - Research partner in TechDebtOps (NFR IPN) on technical debt and PROSPECTS 5.0 (Horizon Europe) on Industry 5.0
+          - Building research funding applications with SINTEF, UiO, NTNU, and international universities
+          - Advocating communities of practice and lifelong learning for consultants
+          - Technology advisory, public speaking, and support for bids
+
+      - position: Lecturer (Universitetslektor), Software Engineering – part-time
+        company: <a href="https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu">Department of Informatics, University of Oslo</a>
+        start_date: 2026
+        end_date: present
+        summary: 2026 – Present
+        highlights:
+          - Part-time teaching position in software engineering, alongside the role at Knowit
+          - Bringing industry experience and research on agile teams, human-AI collaboration, and agentic development into teaching
+
+      - position: Service Platform Lead
+        company: Oslo Origo
+        start_date: 2020-04
+        end_date: 2020-09
+        summary: April 2020 – September 2020
+        highlights:
+          - Led the service platform in Oslo municipality
+          - Enabled innovation through open and transparent self-service platform
+          - Facilitated open data reuse in public and private sectors
+
+      - position: CTO and Principal Engineer / Expert Consultant
+        company: Knowit Objectnet
+        start_date: 2018-06
+        end_date: 2020-04
+        summary: June 2018 – April 2020
+        highlights:
+          - Chief Technology Officer role
+          - Led the DevOps community
+
+      - position: Expert Consultant and DevOps-lead
+        company: Knowit Objectnet
+        start_date: 2012-01
+        end_date: 2015-04
+        summary: January 2012 – April 2015
+        highlights:
+          - Enterprise architecture and tech leadership for Oslo municipality's central integration platform
+
+      - position: Expert Consultant and Manager
+        company: Knowit
+        start_date: 2008
+        end_date: 2012-01
+        summary: 2008 – January 2012
+        highlights:
+          - Enterprise architecture for Oslo municipality integration platform
+
+      - position: Expert Consultant / Senior Consultant
+        company: Unified Consulting
+        start_date: 2003
+        end_date: 2008
+        summary: 2003 – 2008
+        highlights:
+          - Enterprise architecture for Oslo municipality integration platform
+          - Technical project leadership (GWT with Spring/Hibernate)
+
+      - position: Senior Consultant
+        company: Software Innovation ASA
+        start_date: 2002
+        end_date: 2003
+        summary: 2002 – 2003
+        highlights:
+          - Developed Genova 8.0 XML integration
+
+      - position: Systems Consultant
+        company: Genera AS
+        start_date: 1997
+        end_date: 2002
+        summary: 1997 – 2002
+        highlights:
+          - Architected ticketing system for Norwegian Railways (NSB-LISA)
+          - Technical project lead (Visual Basic 6 projects)
+
+      - position: Part-time Consultant
+        company: Sysdeco Innovation
+        start_date: 1995
+        end_date: 1997
+        summary: 1995 – 1997
+        highlights:
+          - Software development in Systemator 5, C, and C++
+          - Unix platform porting, scripting (AWK/SED)
+
+    Education:
+      - institution: University of Oslo
+        studyType: Cand. Scient (Master of Science), Computer Science
+        start_date: 1993
+        end_date: 2002
+
+    Certificates:
+      - name: Amazon Web Services Solutions Architect Associate
+      - name: Databricks Certified Data Engineer Associate
+
+    Profiles and Contact:
+      - bullet: "Email: [janhenrik@gundelsby.com](mailto:janhenrik@gundelsby.com)"
+      - bullet: "LinkedIn: [janhenrikgundelsby](https://www.linkedin.com/in/janhenrikgundelsby)"
+      - bullet: "Personal Website: [gundelsby.com](https://gundelsby.com)"
+      - bullet: "Knowit Research: [knowit.no/om-oss/forskning](https://www.knowit.no/om-oss/forskning/)"
+      - bullet: "University of Oslo: [jangu@ifi.uio.no](mailto:jangu@ifi.uio.no) · [Staff profile](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)"
+
+    Publications and Talks:
+      - bullet: "[Gundelsby.com – publications](/publications/)"
+      - bullet: "[Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)"
+      - bullet: "[Gundelsby.com – talks (in Norwegian)](/foredrag/)"

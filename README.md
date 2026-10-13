@@ -1,53 +1,46 @@
-# gundelsby.com
+# gundelsby.com (al-folio experiment)
 
-This repository contains the source for Jan Henrik's personal website. The site is built with [Jekyll](https://jekyllrb.com/) using the [cvless](https://github.com/piazzai/cvless) theme.
+Source for Jan Henrik Gundelsby's personal website, built with [Jekyll](https://jekyllrb.com/) and the
+[al-folio](https://github.com/alshedivat/al-folio) v1.2 starter (runtime layouts come from the `al_folio_core`
+and related gems, see `Gemfile`).
 
-The site exposes [schema.org](https://schema.org) `Person` metadata to help search engines and chatbots better understand its content.
+## Where the content lives
+
+- `_pages/about.md` – home page (bio bullets, profile picture `assets/img/avatar.png`)
+- `_data/socials.yml` – social icons on the home page
+- `_bibliography/papers.bib` – publications rendered by jekyll-scholar on `/publications/`
+- `_data/publications.yml` – the same papers as structured data for the schema.org JSON-LD on `/publications/`
+- `_data/talks.yml` – talks rendered on `/foredrag/`
+- `_data/cv.yml` – CV (RenderCV format) rendered on `/cv/` by `al_folio_cv`
 
 ## Profile metadata
 
-The same profile text appears in several places. When the role or focus changes, update all of them:
+When the role or focus changes, update all of: `_pages/about.md`, `_data/cv.yml`, `_config.yml`
+(`description`, `keywords`, `seo.*`), `llms.txt`, `_includes/schema-person.html`, and the `identity`
+block in `_data/publications.yml`.
 
-- `cv.md` and `index.md` – the visible CV and home page
-- `_config.yml` – `seo.description` and `seo.keywords`
-- `llms.txt` – summary for AI agents
-- `_includes/schema-person.html` – schema.org `Person` (job titles, affiliations, `knowsAbout`)
-- `_data/publications.yml` – `identity` block used by the publications JSON-LD, and the list of papers
+## Local overrides of theme files
+
+`_includes/head.liquid` shadows the gem's head include to add favicons, agent-discovery `<link>`
+relations, `jekyll-seo-tag`, and the schema.org JSON-LD includes. Check for upstream drift with
+`bundle exec al-folio upgrade overrides audit`.
+
+## Local preview with Docker
+
+```sh
+docker run -d --name gundelsby-alfolio -p 4000:4000 \
+  -v "$PWD":/site -w /site -v gundelsby-alfolio-bundle:/usr/local/bundle ruby:3.3 \
+  bash -c 'apt-get update -qq && apt-get install -y -qq nodejs >/dev/null && bundle install -j4 && \
+           bundle exec jekyll serve --host 0.0.0.0 --port 4000 --force_polling --destination /tmp/_site'
+```
+
+`ruby:3.3` already ships ImageMagick (needed for responsive WebP images); Node.js is needed by
+`jekyll-terser`.
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/main.yml`, which builds the site with Jekyll, uploads `_site` to Bunny.net storage, and purges the CDN cache.
-
-## Local development with Docker
-
-1. Ensure [Docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) are installed.
-2. Start the development container:
-
-```sh
-docker-compose up
-```
-
-The site will be available at [http://localhost:4000](http://localhost:4000).
-
-You can also run the container directly on Linux/macOS:
-
-```sh
-docker run -p 4000:4000 -v $(pwd):/site bretfisher/jekyll-serve
-```
-
-## Running without Docker
-
-If you prefer running Jekyll locally, install Ruby and Bundler, then:
-
-```sh
-bundle install
-bundle exec jekyll serve
-```
+Pushing to `main` triggers `.github/workflows/main.yml`, which builds the site and uploads `_site` to Bunny.net.
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
-## Credits
-
-Based on [cvless](https://github.com/piazzai/cvless).
+MIT, see [LICENSE](LICENSE). Theme: al-folio (MIT).
