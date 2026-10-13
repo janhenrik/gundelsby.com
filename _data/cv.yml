@@ -48,8 +48,9 @@ cv:
 
       - position: Lecturer (Universitetslektor), Software Engineering – part-time
         company: <a href="https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu">Department of Informatics, University of Oslo</a>
-        start_date: 2026
-        end_date: present
+        # A point-in-time `date` instead of start_date/end_date: two ongoing
+        # entries sort by start date, which would put this above Knowit.
+        date: 2026
         summary: 2026 – Present
         highlights:
           - Part-time teaching position in software engineering, alongside the role at Knowit
