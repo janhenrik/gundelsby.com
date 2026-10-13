@@ -38,6 +38,13 @@ jobs:
               --fail || { echo "❌ Failed uploading $file" ; exit 1; }
           done
 
+      - name: Remove stale files from Bunny CDN Storage
+        run: python3 .github/scripts/bunny-prune.py
+        env:
+          BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_STORAGE_PASSWORD }}
+          # Lists stale files only. Change to "delete" once the list looks right.
+          BUNNY_PRUNE_MODE: dry-run
+
       - name: Purge Bunny CDN Cache
         run: |
           curl -s -X POST \
