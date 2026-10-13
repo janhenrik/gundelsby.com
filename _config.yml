@@ -127,9 +127,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head (handled by _includes/schema-person.html)
+og_image: /assets/jpg/avatar.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -147,7 +147,7 @@ enable_simple_analytics: false # Simple Analytics identifies a site by its domai
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+bing_site_verification: "189D5639913EEA0129BADBE4C3336943" # your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -247,7 +247,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar
-  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-socials
   - jekyll-tabs
@@ -283,6 +282,10 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "BingSiteAuth.xml"
+    values:
+      sitemap: false
   # Additional metadata for better AI/chatbot discoverability
   - scope:
       path: ""
@@ -305,7 +308,7 @@ jekyll-minifier:
   # breaking every spacing/positioning utility (e.g. .fixed-top -> broken navbar). Disable it.
   compress_css: false
   # JS minification is delegated to jekyll-terser (compress_javascript above is false).
-  exclude: ["robots.txt"]
+  exclude: ["robots.txt", "llms.txt", "llms-full.txt", "BingSiteAuth.xml"]
 
 # -----------------------------------------------------------------------------
 # Terser
@@ -407,7 +410,7 @@ enable_publication_thumbnails: true
 # These are the defaults
 external_links:
   enabled: true
-  rel: external nofollow noopener
+  rel: external noopener
   target: _blank
   exclude:
 
@@ -447,7 +450,7 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 # -----------------------------------------------------------------------------
 
 enable_google_verification: false # enables google site verification
-enable_bing_verification: false # enables bing site verification
+enable_bing_verification: true # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
 enable_masonry: false # enables automatic project cards arrangement
 enable_math: false # enables math typesetting (uses MathJax)

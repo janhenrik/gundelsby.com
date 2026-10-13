@@ -1,9 +1,8 @@
 {% comment %}
   LOCAL OVERRIDE of al_folio_core 1.0.15 _includes/head.liquid.
   Changes vs. upstream:
-    - canonical <link> removed here (jekyll-seo-tag emits it)
     - gundelsby.com block appended at the end: favicon set, agent-discovery
-      link relations, jekyll-seo-tag, schema.org Person / publications JSON-LD
+      link relations, schema.org Person / publications JSON-LD
   Track drift with: bundle exec al-folio upgrade overrides audit
 {% endcomment %}
 <!-- Metadata, OpenGraph and Schema.org -->
@@ -131,7 +130,7 @@
 {% if page.layout == 'cv' and site.plugins contains 'al_folio_cv' and site.al_folio.features.cv.enabled != false %}
   <link rel="stylesheet" href="{{ '/assets/css/al-folio-cv.css' | relative_url | bust_file_cache }}">
 {% endif %}
-{% comment %} canonical link is emitted by jekyll-seo-tag below {% endcomment %}
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 {% if site.enable_darkmode %}
   <!-- Dark Mode -->
@@ -222,10 +221,10 @@
 
 <!-- Agent discovery (RFC 8288 link relations, IANA-registered rel values) -->
 <link rel="describedby" type="text/markdown" href="{{ '/llms.txt' | relative_url }}">
+<link rel="alternate" type="text/markdown" href="{{ '/llms-full.txt' | relative_url }}" title="Full Markdown profile for LLMs">
 <link rel="author" href="{{ '/cv/' | relative_url }}">
 <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}">
 
-{% seo title=false %}
 {% include schema-person.html %}
 {% if page.schema == 'publications' %}
   {% include schema-publications.html %}

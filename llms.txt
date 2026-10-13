@@ -2,14 +2,22 @@
 
 > Head of Knowit Research at Knowit (Oslo) and part-time Lecturer (Universitetslektor) in Software Engineering at the Department of Informatics, University of Oslo. Researches how organizations adopt AI agents in software development: human-AI collaboration, agentic software engineering, technical and cognitive debt, and large-scale agile. Researcher in KAIROS, a Knowit-led research project on human-AI collaboration with SINTEF and industry partners. ORCID 0000-0001-5275-6553.
 
+## Key Facts
+- **Current roles:** Head of Knowit Research (2020–present) · Lecturer (Universitetslektor) in Software Engineering, University of Oslo (2026–present)
+- **Previous roles:** Service Platform Lead at Oslo Origo / Oslo municipality (2020) · CTO and Principal Engineer at Knowit Objectnet (2018–2020)
+- **Education:** Cand.scient. (M.Sc.) in Computer Science, University of Oslo
+- **Research & specialties:** Agentic software engineering, AI coding agents, human-AI collaboration, technical and cognitive debt, platform engineering, DevOps, large-scale agile
+
 ## Primary pages
 - [Home](https://gundelsby.com/): Bio, current role, contact.
-- [CV](https://gundelsby.com/cv): Professional history, education, certifications.
-- [Publications](https://gundelsby.com/publications): Published papers.
+- [CV](https://gundelsby.com/cv/): Professional history, education, certifications.
+- [Publications](https://gundelsby.com/publications/): Published papers with DOIs.
 - [Talks](https://gundelsby.com/talks/): Public speaking (mostly Norwegian).
+- [Full Markdown profile (llms-full.txt)](https://gundelsby.com/llms-full.txt): Complete CV, publications, and talks in a single Markdown document.
 
 ## Profiles
 - [University of Oslo staff profile](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)
+- [Knowit Research](https://www.knowit.no/om-oss/forskning/)
 - [ORCID](https://orcid.org/0000-0001-5275-6553)
 - [Semantic Scholar](https://www.semanticscholar.org/author/117950039)
 - [Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)

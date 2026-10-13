@@ -1,42 +1,61 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://orcid.org/0000-0001-5275-6553",
-  "name": "{{ site.author.name | escape }}",
-  "givenName": "Jan Henrik",
-  "familyName": "Gundelsby",
-  "jobTitle": ["Head of Knowit Research", "Part-time Lecturer in Software Engineering (Universitetslektor)"],
-  "worksFor": [
+  "@graph": [
     {
-      "@type": "Organization",
-      "name": "Knowit",
-      "url": "https://www.knowit.no/om-oss/forskning/"
+      "@type": "WebSite",
+      "@id": "{{ site.url | absolute_url }}/#website",
+      "url": "{{ site.url | absolute_url }}/",
+      "name": "{{ site.author.name | escape }}",
+      "description": {{ site.description | jsonify }},
+      "publisher": {
+        "@id": "https://orcid.org/0000-0001-5275-6553"
+      }
     },
     {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Oslo, Department of Informatics",
-      "url": "https://www.mn.uio.no/ifi/"
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0001-5275-6553",
+      "name": "{{ site.author.name | escape }}",
+      "givenName": "Jan Henrik",
+      "familyName": "Gundelsby",
+      "jobTitle": ["Head of Knowit Research", "Part-time Lecturer in Software Engineering (Universitetslektor)"],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Knowit",
+          "url": "https://www.knowit.no/om-oss/forskning/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Oslo, Department of Informatics",
+          "url": "https://www.mn.uio.no/ifi/"
+        }
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Oslo",
+        "url": "https://www.uio.no/"
+      },
+      "description": {{ site.seo.description | jsonify }},
+      "knowsAbout": ["Agentic software engineering", "Human-AI collaboration", "AI adoption", "Technical debt", "Cognitive debt", "Large-scale agile", "Platform engineering", "DevOps"],
+      "url": "{{ site.url | absolute_url }}/",
+      "image": "{{ site.photo | relative_url | absolute_url }}",
+      "email": "{{ site.author.email }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0001-5275-6553"
+      },
+      "sameAs": [
+        "https://orcid.org/0000-0001-5275-6553",
+        "https://www.semanticscholar.org/author/117950039",
+        "https://www.knowit.no/om-oss/forskning/",
+        "https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu",
+        "https://scholar.google.com/citations?user=4bw3LsEAAAAJ",
+        "https://www.linkedin.com/in/{{ site.social.linkedin }}",
+        "https://github.com/{{ site.social.github }}"
+      ]
     }
-  ],
-  "description": {{ site.seo.description | jsonify }},
-  "knowsAbout": ["Agentic software engineering", "Human-AI collaboration", "AI adoption", "Technical debt", "Large-scale agile", "Platform engineering", "DevOps"],
-  "url": "{{ site.url | absolute_url }}",
-  "image": "{{ site.photo | relative_url | absolute_url }}",
-  "email": "{{ site.author.email }}",
-  "identifier": {
-    "@type": "PropertyValue",
-    "propertyID": "ORCID",
-    "value": "0000-0001-5275-6553"
-  },
-  "sameAs": [
-    "https://orcid.org/0000-0001-5275-6553",
-    "https://www.semanticscholar.org/author/117950039",
-    "https://www.knowit.no/om-oss/forskning/",
-    "https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu",
-    "https://scholar.google.com/citations?user=4bw3LsEAAAAJ",
-    "https://www.linkedin.com/in/{{ site.social.linkedin }}",
-    "https://github.com/{{ site.social.github }}"
   ]
 }
 </script>

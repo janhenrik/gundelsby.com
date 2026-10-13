@@ -1,0 +1,57 @@
+---
+layout: null
+permalink: /llms-full.txt
+sitemap: false
+---
+# {{ site.data.cv.cv.name }}
+
+> {{ site.seo.description }}. ORCID: {{ site.data.publications.identity.orcid }}.
+
+- Website: {{ site.url }}/
+- Email: {{ site.data.cv.cv.email }} · jangu@ifi.uio.no
+- Location: {{ site.data.cv.cv.location }}
+- ORCID: {{ site.data.publications.identity.orcid_url }}
+- Google Scholar: https://scholar.google.com/citations?user=4bw3LsEAAAAJ
+- Semantic Scholar: {{ site.data.publications.identity.semantic_scholar_url }}
+- LinkedIn: {{ site.data.publications.identity.linkedin_url }}
+- GitHub: {{ site.data.publications.identity.github_url }}
+- University of Oslo profile: {{ site.data.publications.identity.uio_url }}
+- Knowit Research: {{ site.data.publications.identity.knowit_url }}
+
+## Summary
+
+{{ site.data.cv.cv.summary | replace: '<br><br>', '
+
+' }}
+
+## Technical Specialties
+{% for item in site.data.cv.cv.sections['Technical Specialties'] %}
+- {{ item.bullet }}
+{%- endfor %}
+
+## Experience
+{% for exp in site.data.cv.cv.sections['Experience'] %}
+### {{ exp.position }} — {{ exp.company | strip_html }} ({{ exp.summary }})
+{% for h in exp.highlights -%}
+- {{ h }}
+{% endfor -%}
+{% endfor %}
+## Education
+{% for edu in site.data.cv.cv.sections['Education'] %}
+- **{{ edu.studyType }}**, {{ edu.institution }} ({{ edu.start_date }}–{{ edu.end_date }})
+{%- endfor %}
+
+## Certificates
+{% for cert in site.data.cv.cv.sections['Certificates'] %}
+- {{ cert.name }}
+{%- endfor %}
+
+## Publications ({{ site.url }}/publications/)
+{% for pub in site.data.publications.works %}
+- **{{ pub.title }}** ({{ pub.year }}) — *{{ pub.venue }}*. Authors: {% for a in pub.authors %}{{ a.name }}{% unless forloop.last %}; {% endunless %}{% endfor %}{% if pub.et_al %}; et al.{% endif %}. DOI: [{{ pub.doi }}](https://doi.org/{{ pub.doi }})
+{%- endfor %}
+
+## Public Speaking / Talks ({{ site.url }}/talks/)
+{% for talk in site.data.talks %}
+- **{{ talk.year }} – {{ talk.event }}:** {{ talk.title }}{% if talk.url %} ({{ talk.url }}){% endif %}
+{%- endfor %}

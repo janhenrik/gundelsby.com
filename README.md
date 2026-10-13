@@ -16,13 +16,13 @@ and related gems, see `Gemfile`).
 ## Profile metadata
 
 When the role or focus changes, update all of: `_pages/about.md`, `_data/cv.yml`, `_config.yml`
-(`description`, `keywords`, `seo.*`), `llms.txt`, `_includes/schema-person.html`, and the `identity`
-block in `_data/publications.yml`.
+(`description`, `keywords`, `seo.*`), `llms.txt` (`llms-full.txt` is generated automatically from `_data/*.yml`),
+`_includes/schema-person.html`, and the `identity` block in `_data/publications.yml`.
 
 ## Local overrides of theme files
 
 `_includes/head.liquid` shadows the gem's head include to add favicons, agent-discovery `<link>`
-relations, `jekyll-seo-tag`, and the schema.org JSON-LD includes. Check for upstream drift with
+relations, and the schema.org JSON-LD includes. Check for upstream drift with
 `bundle exec al-folio upgrade overrides audit`.
 
 ## Local preview with Docker
