@@ -12,12 +12,14 @@ identity:
   affiliations:
     - type: Organization
       name: Knowit
-      url: https://www.knowit.no/
+      url: https://www.knowit.no/om-oss/forskning/
     - type: CollegeOrUniversity
       name: University of Oslo, Department of Informatics
       url: https://www.mn.uio.no/ifi/
-  job_title: Head of Knowit Research
-  description: PhD researcher focused on large-scale agile and AI-human collaboration
+  job_title:
+    - Head of Knowit Research
+    - Part-time Lecturer in Software Engineering (Universitetslektor)
+  description: Researcher on human-AI collaboration, agentic software engineering, technical debt, and large-scale agile
 
 works:
   - year: 2026

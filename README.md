@@ -4,6 +4,20 @@ This repository contains the source for Jan Henrik's personal website. The site 
 
 The site exposes [schema.org](https://schema.org) `Person` metadata to help search engines and chatbots better understand its content.
 
+## Profile metadata
+
+The same profile text appears in several places. When the role or focus changes, update all of them:
+
+- `cv.md` and `index.md` – the visible CV and home page
+- `_config.yml` – `seo.description` and `seo.keywords`
+- `llms.txt` – summary for AI agents
+- `_includes/schema-person.html` – schema.org `Person` (job titles, affiliations, `knowsAbout`)
+- `_data/publications.yml` – `identity` block used by the publications JSON-LD, and the list of papers
+
+## Deployment
+
+Pushing to `main` triggers `.github/workflows/main.yml`, which builds the site with Jekyll, uploads `_site` to Bunny.net storage, and purges the CDN cache.
+
 ## Local development with Docker
 
 1. Ensure [Docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) are installed.

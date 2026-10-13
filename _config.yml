@@ -1,7 +1,7 @@
 # site settings
 
 title: janhenrik
-description: home
+description: Jan Henrik Gundelsby – Head of Knowit Research and part-time Lecturer in Software Engineering at the University of Oslo
 taglong: Jan Henrik Gundelsby
 tagshort: gundelsby.com
 url: https://gundelsby.com
@@ -65,8 +65,8 @@ jekyll_analytics:
 seo:
   name: Jan Henrik Gundelsby
   type: Person
-  description: "Head of Knowit Research and part-time Lecturer in Software Engineering at the University of Oslo, specializing in enterprise architecture, AI adoption, large-scale agile, DevOps, and lean methodology for modern enterprises"
-  keywords: "enterprise architecture, AI adoption, large-scale agile, technical leadership, DevOps, lean methodology, autonomous teams, human-AI collaboration"
+  description: "Head of Knowit Research and part-time Lecturer in Software Engineering at the University of Oslo, researching how organizations adopt AI agents in software development: human-AI collaboration, agentic software engineering, technical debt, and large-scale agile"
+  keywords: "agentic software engineering, AI coding agents, human-AI collaboration, AI adoption, technical debt, cognitive debt, large-scale agile, platform engineering, DevOps, software engineering research"
 
 # Additional metadata for better AI/chatbot discoverability
 defaults:

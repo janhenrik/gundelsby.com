@@ -10,8 +10,8 @@
   "worksFor": [
     {
       "@type": "Organization",
-      "name": "Knowit Solutions",
-      "url": "https://www.knowit.no/"
+      "name": "Knowit",
+      "url": "https://www.knowit.no/om-oss/forskning/"
     },
     {
       "@type": "CollegeOrUniversity",
@@ -19,6 +19,8 @@
       "url": "https://www.mn.uio.no/ifi/"
     }
   ],
+  "description": {{ site.seo.description | jsonify }},
+  "knowsAbout": ["Agentic software engineering", "Human-AI collaboration", "AI adoption", "Technical debt", "Large-scale agile", "Platform engineering", "DevOps"],
   "url": "{{ site.url | absolute_url }}",
   "image": "{{ site.photo | relative_url | absolute_url }}",
   "email": "{{ site.author.email }}",

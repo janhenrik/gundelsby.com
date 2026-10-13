@@ -7,11 +7,11 @@ title: Home
 
 ### Hi there 👋
 
-- 🔭 I’m currently working as Head of Knowit Research @ [Knowit Solutions](https://github.com/knowit) 
+- 🔭 I’m currently working as Head of Knowit Research @ [Knowit](https://www.knowit.no/om-oss/forskning/)
 - 🎓 Part-time Lecturer (Universitetslektor) in Software Engineering @ [Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)
 - 💼 [CV](/cv) or [LinkedIn](https://www.linkedin.com/in/janhenrikgundelsby/)
-- 🤓 I’m currently learning Machine Learning and Cloud computing!
-- 💬 Ask me about IT and cloud strategy, technical leadership for the modern Lean Enterprise, mentoring, DevOps, lean methodology and autonomous teams. 
+- 🤖 I research how teams and organizations adopt AI agents in software development ([KAIROS](https://www.knowit.no/om-oss/forskning/))
+- 💬 Ask me about agentic software engineering, human-AI collaboration, technical debt, platform engineering, and large-scale agile
 - 🗣 [Public speaking](/foredrag) (in Norwegian)
 - 🔬 [Published papers](/publications)
 - 🆔 <a rel="me" href="https://orcid.org/0000-0001-5275-6553">ORCID: 0000-0001-5275-6553</a>

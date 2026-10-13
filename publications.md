@@ -5,7 +5,7 @@ schema: publications
 ---
 # Publications
 
-Research on agile teams, large-scale software development, technical debt, and AI-human collaboration.
+Research on agile teams, large-scale software development, technical debt, and human-AI collaboration.
 
 <a rel="me" href="{{ site.data.publications.identity.orcid_url }}">ORCID: {{ site.data.publications.identity.orcid }}</a> · [Semantic Scholar]({{ site.data.publications.identity.semantic_scholar_url }}) · [Google Scholar](https://scholar.google.com/citations?user=4bw3LsEAAAAJ)
 
