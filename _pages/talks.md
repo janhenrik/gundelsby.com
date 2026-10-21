@@ -2,7 +2,7 @@
 layout: page
 permalink: /talks/
 title: talks
-description: Talks and public speaking, mostly in Norwegian.
+description: Selected talks and public speaking, mostly in Norwegian.
 nav: true
 nav_order: 3
 ---
