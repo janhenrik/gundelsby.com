@@ -6,7 +6,7 @@ and related gems, see `Gemfile`).
 
 ## Where the content lives
 
-- `_pages/about.md` – home page (bio bullets, profile picture `assets/img/avatar.png`)
+- `_pages/about.md` – home page (bio bullets, profile photo `assets/img/profile.jpg` with the octocat `assets/img/octocat.png` in front)
 - `_data/socials.yml` – social icons on the home page
 - `_bibliography/papers.bib` – publications rendered by jekyll-scholar on `/publications/`
 - `_data/publications.yml` – the same papers as structured data for the schema.org JSON-LD on `/publications/`

@@ -6,9 +6,10 @@ subtitle: Head of Knowit Research · Part-time Lecturer in Software Engineering,
 
 profile:
   align: right
-  image: avatar.png
+  image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
+    <img class="profile-sidekick" src="/assets/img/octocat.png" alt="Octocat version of Jan Henrik" width="264" height="388">
     <p>Knowit, Oslo</p>
     <p>Department of Informatics, University of Oslo</p>
 
@@ -21,6 +22,22 @@ announcements:
 latest_posts:
   enabled: false # no blog on this site
 ---
+
+<style>
+  /* Octocat standing in front of the lower-left edge of the profile photo.
+     margin-top is a % of the profile width, so the cat (38% wide, 264x388) ends ~10% below the circle. */
+  .profile { position: relative; }
+  .profile .rounded-circle { border: 4px solid var(--global-bg-color, #fff); }
+  .profile-sidekick {
+    position: absolute; top: 0; left: -5%; margin-top: 54%;
+    width: 38% !important; height: auto !important; /* the theme forces .profile img to full width */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+    transition: transform 0.25s ease; transform-origin: bottom center;
+  }
+  .profile:hover .profile-sidekick { transform: rotate(-6deg) translateY(-4px); }
+  .profile .more-info { margin-top: 2rem; }
+  @media (max-width: 576px) { .profile-sidekick { left: 0; } }
+</style>
 
 ### Hi there 👋
 
