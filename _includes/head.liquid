@@ -1,12 +1,18 @@
 {% comment %}
   LOCAL OVERRIDE of al_folio_core 1.0.15 _includes/head.liquid.
   Changes vs. upstream:
+    - og:image size/alt tags after the metadata include (site.og_image_*)
     - gundelsby.com block appended at the end: favicon set, agent-discovery
       link relations, schema.org Person / publications JSON-LD
   Track drift with: bundle exec al-folio upgrade overrides audit
 {% endcomment %}
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
+{% if site.serve_og_meta and site.og_image_width and page.og_image == nil %}
+  <meta property="og:image:width" content="{{ site.og_image_width }}">
+  <meta property="og:image:height" content="{{ site.og_image_height }}">
+  <meta property="og:image:alt" content="{{ site.og_image_alt | escape }}">
+{% endif %}
 
 <!-- Security: Content Security Policy -->
 <!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->

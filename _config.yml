@@ -129,7 +129,12 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head (handled by _includes/schema-person.html)
-og_image: /assets/img/og-image.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/og-card.jpg # The site-wide (default for all links) Open Graph preview image
+# Size and alt text of og_image, emitted by _includes/head.liquid (LinkedIn renders a blurry preview without them).
+# Rename the file when the image changes: LinkedIn caches previews per image URL.
+og_image_width: 2400
+og_image_height: 1260
+og_image_alt: Jan Henrik Gundelsby – Head of Knowit Research and part-time Lecturer in Software Engineering, University of Oslo
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -291,7 +296,7 @@ defaults:
       path: ""
     values:
       author: Jan Henrik Gundelsby
-      image: /assets/img/og-image.jpg
+      image: /assets/img/og-card.jpg
 
 sass:
   style: compressed
