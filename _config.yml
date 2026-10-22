@@ -129,7 +129,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head (handled by _includes/schema-person.html)
-og_image: /assets/img/profile.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/og-image.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -291,7 +291,7 @@ defaults:
       path: ""
     values:
       author: Jan Henrik Gundelsby
-      image: /assets/img/profile.jpg
+      image: /assets/img/og-image.jpg
 
 sass:
   style: compressed
