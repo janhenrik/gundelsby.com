@@ -11,7 +11,7 @@ profile:
   more_info: >
     <img class="profile-sidekick" src="/assets/img/octocat.png" alt="Octocat version of Jan Henrik" width="264" height="388">
     <p>Knowit, Oslo</p>
-    <p>Department of Informatics, University of Oslo</p>
+    <p>Department of Informatics, <span style="white-space: nowrap">University of Oslo</span></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -36,7 +36,18 @@ latest_posts:
   }
   .profile:hover .profile-sidekick { transform: rotate(-6deg) translateY(-4px); }
   .profile .more-info { margin-top: 2rem; }
-  @media (max-width: 576px) { .profile-sidekick { left: 0; } }
+  /* On phones the theme makes the profile full width; keep it a compact, centred block instead.
+     The sidekick is positioned in % of .profile, so it shrinks along with the photo. */
+  @media (max-width: 575.98px) {
+    .profile.float-right { float: none !important; width: 180px; margin: 0 auto 1.5rem; }
+    .profile-sidekick { left: -8%; }
+    .profile .more-info {
+      margin-top: 1.5rem; text-align: center; font-size: 0.85rem;
+      /* break out of the 180px block; negative margins, since positioning would re-anchor the sidekick */
+      width: calc(100vw - 30px); margin-left: calc(90px - 50vw + 15px);
+    }
+    .profile .more-info p { display: block; }
+  }
 </style>
 
 ### Hi there 👋
