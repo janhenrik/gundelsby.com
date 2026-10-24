@@ -22,16 +22,16 @@ identity:
   description: Researcher on human-AI collaboration, agentic software engineering, technical debt, and large-scale agile
 
 works:
-  - year: 2026
+  - year: 2027
     title: '"I''ll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams'
-    doi: 10.13140/rg.2.2.19621.67040
-    venue: Preprint
+    doi: 10.1007/978-3-032-39205-3_7
+    venue: XP 2026 Workshops (LNBIP 596)
     authors:
       - name: Gundelsby, Jan Henrik
         orcid: true
       - name: Berntzen, Marthe
-      - name: Grøneng, C.
-      - name: Vigeland, D.
+      - name: Grøneng, Camilla
+      - name: Vigeland, Dan
 
   - year: 2025
     title: Responsible AI in Agile Software Engineering — An Industry Perspective
