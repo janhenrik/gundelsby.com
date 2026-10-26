@@ -5,6 +5,7 @@ identity:
   orcid: 0000-0001-5275-6553
   orcid_url: https://orcid.org/0000-0001-5275-6553
   semantic_scholar_url: https://www.semanticscholar.org/author/117950039
+  nva_url: https://nva.sikt.no/search?contributorName=Jan+Henrik+Gundelsby
   knowit_url: https://www.knowit.no/om-oss/forskning/
   uio_url: https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu
   linkedin_url: https://www.linkedin.com/in/janhenrikgundelsby/
@@ -20,83 +21,3 @@ identity:
     - Head of Knowit Research
     - Part-time Lecturer in Software Engineering (Universitetslektor)
   description: Researcher on human-AI collaboration, agentic software engineering, technical debt, and large-scale agile
-
-works:
-  - year: 2026
-    title: '"I''ll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams'
-    doi: 10.1007/978-3-032-39205-3_7
-    venue: XP 2026 Workshops (LNBIP 596)
-    authors:
-      - name: Gundelsby, Jan Henrik
-        orcid: true
-      - name: Berntzen, Marthe
-      - name: Grøneng, Camilla
-      - name: Vigeland, Dan
-
-  - year: 2026
-    title: 'AI for Technical Debt Management: Summary from the AI4TD Workshop at XP2026'
-    doi: 10.1007/978-3-032-39205-3_10
-    venue: XP 2026 Workshops (LNBIP 596)
-    authors:
-      - name: Martini, Antonio
-      - name: Nguyen, Phu
-      - name: Ochoa, Lina
-      - name: Gundelsby, Jan Henrik
-        orcid: true
-      - name: Orucevic, Mili
-
-  - year: 2025
-    title: Responsible AI in Agile Software Engineering — An Industry Perspective
-    doi: 10.1007/978-3-031-72781-8_4
-    venue: LNBIP (Int. Conf. Agile Software Development / XP)
-    authors:
-      - name: Ulfsnes, R.
-      - name: Moe, Nils Brede
-      - name: Emmerhoff, J.
-      - name: Floryan, M.
-      - name: Griva, A.
-      - name: Gundelsby, Jan Henrik
-        orcid: true
-    et_al: true
-
-  - year: 2025
-    title: 'DebtQuest: Discover Technical Debt Management Issues with Survey Visualization'
-    doi: 10.1109/vissoft67405.2025.00011
-    venue: IEEE Working Conf. on Software Visualization (VISSOFT)
-    authors:
-      - name: Irgens, M.
-      - name: Orucevic, M.
-      - name: Boye, M.
-      - name: Gundelsby, Jan Henrik
-        orcid: true
-      - name: Martini, A.
-
-  - year: 2023
-    title: 'The Future of Hybrid Software Development: Challenging Current Assumptions'
-    doi: 10.1109/ms.2022.3230449
-    venue: IEEE Software 40(2)
-    authors:
-      - name: Conboy, K.
-      - name: Moe, Nils Brede
-      - name: Stray, Viktoria
-      - name: Gundelsby, Jan Henrik
-        orcid: true
-
-  - year: 2022
-    title: How Agile Teams Make Objectives and Key Results (OKRs) Work
-    doi: 10.1145/3529320.3529332
-    venue: ICSSP/ICGSE (Int. Conf. Software and System Processes)
-    authors:
-      - name: Stray, Viktoria
-      - name: Gundelsby, Jan Henrik
-        orcid: true
-      - name: Ulfsnes, R.
-      - name: Moe, Nils Brede
-
-  - year: 2018
-    title: Enabling Autonomous Teams in Large-Scale Agile Through Architectural Principles
-    doi: 10.1145/3234152.3234183
-    venue: XP Companion (19th Int. Conf. Agile Software Development)
-    authors:
-      - name: Gundelsby, Jan Henrik
-        orcid: true

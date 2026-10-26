@@ -8,8 +8,9 @@ and related gems, see `Gemfile`).
 
 - `_pages/about.md` – home page (bio bullets, profile photo `assets/img/profile.jpg` with the octocat `assets/img/octocat.png` in front)
 - `_data/socials.yml` – social icons on the home page
-- `_bibliography/papers.bib` – publications rendered by jekyll-scholar on `/publications/`
-- `_data/publications.yml` – the same papers as structured data for the schema.org JSON-LD on `/publications/`
+- `_bibliography/papers.bib` – the single source for publications rendered on `/publications/` and exposed as schema.org JSON-LD
+- `_data/publications.yml` – researcher identity and profile links used by the publications page and structured data
+- `_plugins/publications_from_bibtex.rb` – converts the BibTeX entries to structured data during the Jekyll build
 - `_data/talks.yml` – talks rendered on `/talks/`
 - `_data/cv.yml` – CV (RenderCV format) rendered on `/cv/` by `al_folio_cv`
 

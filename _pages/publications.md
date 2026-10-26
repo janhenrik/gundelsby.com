@@ -11,7 +11,12 @@ schema: publications
 <!-- _pages/publications.md -->
 
 <p>
-  <a rel="me" href="{{ site.data.publications.identity.orcid_url }}">ORCID: {{ site.data.publications.identity.orcid }}</a> ·
+  Peer-reviewed publications. For the complete research record, see
+  <a rel="me" href="{{ site.data.publications.identity.orcid_url }}">ORCID</a> and
+  <a href="{{ site.data.publications.identity.nva_url }}">NVA</a>.
+</p>
+
+<p>
   <a href="{{ site.data.publications.identity.semantic_scholar_url }}">Semantic Scholar</a> ·
   <a href="https://scholar.google.com/citations?user=4bw3LsEAAAAJ">Google Scholar</a>
 </p>
