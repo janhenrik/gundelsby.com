@@ -22,7 +22,7 @@ identity:
   description: Researcher on human-AI collaboration, agentic software engineering, technical debt, and large-scale agile
 
 works:
-  - year: 2027
+  - year: 2026
     title: '"I''ll Ask AI First": How GenAI Disrupts Collaboration in Agile Teams'
     doi: 10.1007/978-3-032-39205-3_7
     venue: XP 2026 Workshops (LNBIP 596)
@@ -32,6 +32,18 @@ works:
       - name: Berntzen, Marthe
       - name: Grøneng, Camilla
       - name: Vigeland, Dan
+
+  - year: 2026
+    title: 'AI for Technical Debt Management: Summary from the AI4TD Workshop at XP2026'
+    doi: 10.1007/978-3-032-39205-3_10
+    venue: XP 2026 Workshops (LNBIP 596)
+    authors:
+      - name: Martini, Antonio
+      - name: Nguyen, Phu
+      - name: Ochoa, Lina
+      - name: Gundelsby, Jan Henrik
+        orcid: true
+      - name: Orucevic, Mili
 
   - year: 2025
     title: Responsible AI in Agile Software Engineering — An Industry Perspective
