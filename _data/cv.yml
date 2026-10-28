@@ -11,7 +11,7 @@ cv:
   summary: >-
     Head of Knowit Research and part-time Lecturer in Software Engineering at the University of Oslo. I study how organizations adopt AI agents in software development, and help them do it. Bridging academia and practice on human-AI collaboration, agentic software engineering, technical debt, and large-scale agile.
     <br><br>
-    Over 30 years as a developer, architect, and technology leader, from microservices and DevOps in Oslo municipality to building and running agentic development setups today. IT strategy, technical leadership, mentoring, and lifelong learning for consultants.
+    Over 30 years as a developer, architect, and technology leader, from microservices and DevOps in Oslo municipality to building and running agentic development setups today. IT strategy, technical leadership, building communities of practice, mentoring, and lifelong learning for consultants.
     <br><br>
     Published researcher on agile teams, human-AI collaboration, and technical debt. Regular speaker at JavaZone, XP, and other venues – see [talks](/talks/).
 
@@ -29,6 +29,7 @@ cv:
       - bullet: "**AI adoption research:** following organizations through agent-driven change, maturity baselines, and measuring real effect beyond the hype"
       - bullet: "**Technical and cognitive debt:** managing debt in codebases and teams, including the new kinds AI-generated code creates"
       - bullet: "**Platforms and organization:** platform engineering, product organization, DevOps, and large-scale agile in large enterprises and the public sector"
+      - bullet: "**Communities of practice:** building and running professional communities, knowledge-sharing arenas, and learning cultures in consultancies and client organizations, grounded in research on what makes communities succeed"
       - bullet: "**Cloud and data:** AWS and Databricks certified; microservices and integration architecture"
 
     Experience:
@@ -43,7 +44,7 @@ cv:
           - Embedded research on agent-driven development with clients, including a following study of an agentic migration at Tet Digital
           - Research partner in TechDebtOps (NFR IPN) on technical debt and PROSPECTS 5.0 (Horizon Europe) on Industry 5.0
           - Building research funding applications with SINTEF, UiO, NTNU, and international universities
-          - Advocating communities of practice and lifelong learning for consultants
+          - Builds communities of practice and learning cultures, both inside Knowit and with clients; designed Knowit's model for knowledge-sharing arenas, from team-level "safe harbours" to national and international conferences
           - Technology advisory, public speaking, and support for bids
 
       - position: Lecturer (Universitetslektor), Software Engineering – part-time
