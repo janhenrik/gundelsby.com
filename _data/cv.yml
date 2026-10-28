@@ -76,6 +76,12 @@ cv:
           - Chief Technology Officer role
           - Led the DevOps community
 
+      - position: CTO
+        company: Knowit Objectnet
+        start_date: 2015-04
+        end_date: 2018-06
+        summary: April 2015 – June 2018
+
       - position: Expert Consultant and DevOps-lead
         company: Knowit Objectnet
         start_date: 2012-01
