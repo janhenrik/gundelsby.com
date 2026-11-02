@@ -16,7 +16,7 @@
 - [Full Markdown profile (llms-full.txt)](https://gundelsby.com/llms-full.txt): Complete CV, publications, and talks in a single Markdown document.
 
 ## Profiles
-- [University of Oslo staff profile](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)
+- [University of Oslo staff profile](https://www.mn.uio.no/ifi/english/people/aca/jangu/)
 - [Knowit Research](https://www.knowit.no/om-oss/forskning/)
 - [ORCID](https://orcid.org/0000-0001-5275-6553)
 - [Semantic Scholar](https://www.semanticscholar.org/author/117950039)

@@ -53,7 +53,7 @@ latest_posts:
 ### Hi there 👋
 
 - 🔭 I’m currently working as Head of Knowit Research @ [Knowit](https://www.knowit.no/om-oss/forskning/)
-- 🎓 Part-time Lecturer (Universitetslektor) in Software Engineering @ [Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/?vrtx=person-view&uid=jangu)
+- 🎓 Part-time Lecturer (Universitetslektor) in Software Engineering @ [Department of Informatics, University of Oslo](https://www.mn.uio.no/ifi/english/people/aca/jangu/)
 - 💼 [CV](/cv/) or [LinkedIn](https://www.linkedin.com/in/janhenrikgundelsby/)
 - 🤖 I research how teams and organizations adopt AI agents in software development ([KAIROS](https://www.knowit.no/om-oss/forskning/))
 - 💬 Ask me about agentic software engineering, human-AI collaboration, technical debt, platform engineering, and large-scale agile
