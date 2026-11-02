@@ -101,11 +101,13 @@ def format_entry(entry_type, key, fields):
     return f"@{entry_type}{{{key},\n" + ",\n".join(lines) + "\n}\n"
 
 
-def insert_entries(text, entries):
-    """Insert entries before the first existing entry (newest first)."""
-    m = re.search(r"^@", text, re.M)
-    pos = m.start() if m else len(text)
-    return text[:pos] + "\n".join(entries) + "\n" + text[pos:]
+def insert_entry(text, entry, year):
+    """Insert entry before the first existing entry with a lower year (file is newest first)."""
+    for m in re.finditer(r"^@\w+\{.*?^\}\n", text, re.M | re.S):
+        y = re.search(r"^\s*year\s*=\s*[{\"]?(\d{4})", m.group(0), re.M)
+        if y and y.group(1) < year:
+            return text[:m.start()] + entry + "\n" + text[m.start():]
+    return text.rstrip("\n") + "\n\n" + entry
 
 
 def main():
@@ -132,8 +134,8 @@ def main():
             failed.append((doi, works[doi], str(error)))
 
     if added:
-        added.sort(key=lambda a: a[2].get("year", ""), reverse=True)
-        text = insert_entries(text, [a[3] for a in added])
+        for _, _, fields, entry in added:
+            text = insert_entry(text, entry, fields.get("year", "0000"))
         with open(BIB, "w", encoding="utf-8") as f:
             f.write(text)
 
