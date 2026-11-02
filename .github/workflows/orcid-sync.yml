@@ -29,3 +29,7 @@ jobs:
           commit-message: Add new publications from ORCID
           title: New publications from ORCID
           body-path: ${{ runner.temp }}/orcid-sync-summary.md
+          # Assign + request review so the notification counts as "participating"
+          # and is emailed, not just shown on GitHub like plain "watching" events.
+          assignees: janhenrik
+          reviewers: janhenrik
