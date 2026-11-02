@@ -1,0 +1,31 @@
+name: Sync publications from ORCID
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add new ORCID works to papers.bib
+        run: python3 .github/scripts/orcid-sync.py
+        env:
+          SUMMARY_FILE: ${{ runner.temp }}/orcid-sync-summary.md
+
+      - name: Open or update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: orcid-sync
+          delete-branch: true
+          add-paths: _bibliography/papers.bib
+          commit-message: Add new publications from ORCID
+          title: New publications from ORCID
+          body-path: ${{ runner.temp }}/orcid-sync-summary.md
