@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: write # push the updated papers.bib to main
+  actions: write # trigger the deploy workflow afterwards
 
 jobs:
   sync:
@@ -20,12 +20,21 @@ jobs:
         env:
           SUMMARY_FILE: ${{ runner.temp }}/orcid-sync-summary.md
 
-      - name: Open or update pull request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          branch: orcid-sync
-          delete-branch: true
-          add-paths: _bibliography/papers.bib
-          commit-message: Add new publications from ORCID
-          title: New publications from ORCID
-          body-path: ${{ runner.temp }}/orcid-sync-summary.md
+      - name: Write job summary
+        run: cat "$RUNNER_TEMP/orcid-sync-summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit, push and deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- _bibliography/papers.bib; then
+            echo "No new publications."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Add new publications from ORCID" -- _bibliography/papers.bib
+          git push origin HEAD:main
+          # Pushes made with GITHUB_TOKEN do not trigger other workflows,
+          # so start the deploy explicitly.
+          gh workflow run main.yml --ref main

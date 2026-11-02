@@ -5,8 +5,8 @@ bibliography. For each new DOI, BibTeX is fetched from doi.org (Crossref)
 and inserted at the top of the file. Existing entries are never modified,
 so hand-curated fields (abbr, author spelling, venue names) are preserved.
 
-Writes a Markdown summary to $SUMMARY_FILE (default: orcid-sync-summary.md)
-for use as a pull request body. Usage: orcid-sync.py [path/to/papers.bib]
+Writes a Markdown summary to $SUMMARY_FILE (default: orcid-sync-summary.md),
+shown as the workflow job summary. Usage: orcid-sync.py [path/to/papers.bib]
 """
 import json
 import os
@@ -141,7 +141,7 @@ def main():
     if added:
         summary += ["### Added", ""]
         summary += [f"- `{k}`: {f.get('title')} ({f.get('year')}) — https://doi.org/{d}" for k, d, f, _ in added]
-        summary += ["", "**Before merging:** add `abbr` (venue badge), check the year "
+        summary += ["", "**To tidy by hand:** add `abbr` (venue badge), check the year "
                     "(Crossref often uses the volume's issue year), and tidy author names "
                     "and venue to match the other entries.", ""]
     if failed:
